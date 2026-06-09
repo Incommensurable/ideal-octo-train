@@ -1,10 +1,10 @@
 # :)
 
-you're going to make a program that
+you're going to write a program that
 
 - makes HTTP requests to a public website (wikipedia) and parse the data you get in response to make additional requests
-- make the program accessible through a web page
-- display clickable links on the web page
+- makes the program accessible through a web page
+- displays clickable links on the web page
 
 
 ## project setup
@@ -24,7 +24,7 @@ you're going to make a program that
     - if this doesn't work we can do it manually with the virtualenv package
 - commit your work so far
 
-## project start
+## python start
 
 - write a function that accepts the name of an article as an argument and returns the contents
     - https://www.mediawiki.org/wiki/API:Get_the_contents_of_a_page
@@ -46,6 +46,20 @@ you're going to make a program that
             - `\w` means any uppercase or lowercase letter (not including accented chracters)
             - `\s` means any whitespace (tab, space, newline)
             - `\d` means a digit (0-9)
-        - `\w+\-\d\d*` matches a bunch of letters, a hyphen, and then 1 or 2 digits. `blahblah-1`
+        - ex. `\w+\-\d\d*` matches a bunch of letters, a hyphen, and then 1 or 2 digits. like `blahblah-1`
     - https://regex101.com/ this is what I use to test regular expressions
 - commit
+
+## webapp start
+
+at this point it's important to understand the basics of http
+
+- https://medium.com/@secshubhamsharma/the-http-basics-to-advanced-beginner-friendly-guide-to-how-the-web-works-816ed26017e8
+- https://www.tomshardware.com/how-to/use-wget-download-files-command-line for testing http requests in your terminal
+    - on linux I would use curl most of the time, it's a bit simpler
+
+some links that might be helpful in setting up the flask app
+
+- [set up a flask app](https://www.geeksforgeeks.org/python/flask-creating-first-simple-application/)
+- [render some data in html with a common templating format](https://enkledesigns.com/how-to-get-a-table-to-display-in-flask/)
+- [more templating documentation](https://jinja.palletsprojects.com/en/stable/templates/)
