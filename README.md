@@ -9,7 +9,7 @@ you're going to make a program that
 
 ## project setup
 
-- make sure python is installed
+- make sure python and git are installed
 - set up poetry as a dependency manager [documentation](https://python-poetry.org/docs/basic-usage/#initialising-a-pre-existing-project)
     - `pip install poetry` to install the tool
     - `poetry init` to set up the files that it's going to use
@@ -19,7 +19,8 @@ you're going to make a program that
         package-mode = false
         ```
     - `poetry add requests` to add a dependency
-    - now make sure it works. either [activate a virtual environment](https://python-poetry.org/docs/managing-environments/#activating-the-environment) or do `poetry run python` to open an interpreter? this might take a bit of massaging
+    - now make sure it works. either [activate a virtual environment](https://python-poetry.org/docs/managing-environments/#activating-the-environment) or do `poetry run python` to open an interpreter I think. this might take a bit of massaging
+    - this might be a good time to talk about shells? just to sortof explain what the virtual environment is doing
     - if this doesn't work we can do it manually with the virtualenv package
 - commit your work so far
 
