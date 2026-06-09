@@ -18,8 +18,19 @@ you're going to make a program that
         [tool.poetry]
         package-mode = false
         ```
-
     - `poetry add requests` to add a dependency
-
     - now make sure it works. either [activate a virtual environment](https://python-poetry.org/docs/managing-environments/#activating-the-environment) or do `poetry run python` to open an interpreter? this might take a bit of massaging
+    - if this doesn't work we can do it manually with the virtualenv package
 - commit your work so far
+
+## project start
+
+- write a function that accepts the name of an article as an argument and returns the contents
+    - https://www.mediawiki.org/wiki/API:Get_the_contents_of_a_page
+    - https://docs.python-requests.org/en/latest/index.html
+- commit
+- update the function to search for links in the wiki article and return them
+    - you probably want to use regular expressions for this. regular expressions are a format for expressing text patterns. python has a library for loading these patterns and using them to parse text
+    - https://docs.python.org/3/howto/regex.html
+    - https://regex101.com/ this is what I use to test regular expressions
+- commit
