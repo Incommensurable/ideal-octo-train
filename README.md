@@ -33,5 +33,19 @@ you're going to make a program that
 - update the function to search for links in the wiki article and return them
     - you probably want to use regular expressions for this. regular expressions are a format for expressing text patterns. python has a library for loading these patterns and using them to parse text
     - https://docs.python.org/3/howto/regex.html
+        - the basics:
+        - `() [] + ^ . * \` are special characters that have syntactical meaning
+            - `()` is a capturing group
+            - `[]` is to indicate one of several characters. e.g `[a-z]` means any character from a-z
+            - `.` means any character
+            - `+` means 1 or more of something. e.g `.+` means one or more character
+            - `*` means 0 or more of something
+            - `\` is an escape character. `\\` means one literal `\`, `\n` means a newline
+            - `^` is the start of a line/string
+        - `\w \s \d` are common shorthands for characters
+            - `\w` means any uppercase or lowercase letter (not including accented chracters)
+            - `\s` means any whitespace (tab, space, newline)
+            - `\d` means a digit (0-9)
+        - `\w+\-\d\d*` matches a bunch of letters, a hyphen, and then 1 or 2 digits. `blahblah-1`
     - https://regex101.com/ this is what I use to test regular expressions
 - commit
