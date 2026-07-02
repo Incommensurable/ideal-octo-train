@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <!--the site that taught this is here: https://www.geeksforgeeks.org/python/flask-rendering-templates/-->
 <html>
+    <head>
+        <link rel="shortcut icon" type="image/png" href="{{ url_for('static', filename='favicon.png') }}">
+    </head>
+
 <body>
     <h2>{{name}}</h2>
     <a href = {{name_url}}>{{name_url}}</a>   
