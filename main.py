@@ -18,8 +18,18 @@ def get_links(article_text):
     list_links = word_pattern.findall(article_text)
     return list_links
 
+def get_links_urls(linkslist):
+    list_urls = []
+    for link in linkslist:
+        list_urls.append(f"https://en.wikipedia.org/wiki/{format_undersc(link)}")
+    return list_urls
 
-x = input("prompt: ")
-wiki_mush = get_article(x)
-print(sorted(get_links(wiki_mush)))
-print(f"https://en.wikipedia.org/wiki/{format_undersc(x)}")
+def get_single_url(title):
+    return f"https://en.wikipedia.org/wiki/{format_undersc(title)}"
+
+
+if __name__ == '__main__':
+    x = input("prompt: ")
+    wiki_mush = get_article(x)
+    print(sorted(get_links(wiki_mush)))
+    print(f"https://en.wikipedia.org/wiki/{format_undersc(x)}")

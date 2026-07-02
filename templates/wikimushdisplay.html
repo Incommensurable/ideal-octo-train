@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<!--the site that taught this is here: https://www.geeksforgeeks.org/python/flask-rendering-templates/-->
+<html>
+<body>
+    <h2>{{name}}</h2>
+    <a href = {{name_url}}>{{name_url}}</a>   
+    <h3>Behold:</h3>
+    <ul>
+        {% for link in mush %}
+        <li> <a href = "{{mush_urls[loop.index-1]}}"> {{ link }} </a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
